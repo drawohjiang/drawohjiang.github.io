@@ -95,13 +95,14 @@
      HOME PAGE
   ══════════════════════════════════════════════════════════════ */
   .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, #1A3A6B 60%, #1565C0 100%);
+    background: linear-gradient(rgba(10,24,48,0.72), rgba(10,24,48,0.62)),
+      url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80&fit=crop') center/cover no-repeat;
     padding: 100px 24px 90px; text-align: center; color: var(--white);
     position: relative; overflow: hidden;
   }
   .hero::before {
     content: ''; position: absolute; inset: 0; pointer-events: none;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: linear-gradient(to bottom, rgba(10,24,48,0.15) 0%, rgba(10,24,48,0.35) 100%);
   }
   .hero-eyebrow {
     display: inline-block; background: rgba(255,255,255,0.15);
@@ -346,19 +347,23 @@
   .services-hero {
     background: var(--sky); padding: 60px 24px 48px; text-align: center;
   }
-  .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 48px; }
+  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 48px; }
   .service-item {
-    padding: 40px 36px; border-bottom: 1px solid var(--mist); border-right: 1px solid var(--mist);
-    transition: background var(--transition);
+    background: var(--white); border-radius: 14px; overflow: hidden;
+    box-shadow: var(--shadow); border: 1px solid var(--mist);
+    transition: transform var(--transition), box-shadow var(--transition);
+    display: flex; flex-direction: column;
   }
-  .service-item:hover { background: var(--ice); }
-  .service-item:nth-child(even) { border-right: none; }
-  .service-icon { font-size: 2rem; margin-bottom: 16px; }
-  .service-item h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
-  .service-item p { font-size: 0.9rem; color: var(--slate); line-height: 1.65; }
-  .service-includes { margin-top: 14px; }
-  .service-includes li { font-size: 0.83rem; color: var(--slate); padding: 3px 0; list-style: none; display: flex; gap: 8px; }
-  .service-includes li::before { content: '—'; color: var(--blue); }
+  .service-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .service-photo { width: 100%; height: 200px; object-fit: cover; display: block; }
+  .service-body { padding: 28px 28px 32px; flex: 1; display: flex; flex-direction: column; }
+  .service-icon { font-size: 1.6rem; margin-bottom: 12px; }
+  .service-item h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .service-item p { font-size: 0.88rem; color: var(--slate); line-height: 1.65; }
+  .service-includes { margin-top: 16px; flex: 1; }
+  .service-includes li { font-size: 0.83rem; color: var(--slate); padding: 5px 0; list-style: none; display: flex; gap: 8px; border-bottom: 1px solid var(--ice); align-items: flex-start; }
+  .service-includes li:last-child { border-bottom: none; }
+  .service-includes li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
   .checklist-section { padding: 72px 24px; }
   .checklist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
@@ -487,7 +492,7 @@
       <a onclick="showPage('services')" id="nav-services">Services</a>
       <a onclick="showPage('pricing')" id="nav-pricing">Pricing</a>
       <a onclick="showPage('admin')" id="nav-admin">Admin</a>
-      <a onclick="showPage('booking')" class="nav-cta" id="nav-booking">Book Now</a>
+      <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});showPage('home')" style="color:var(--slate);font-size:0.9rem;font-weight:500">Get a quote</a> <a onclick="showPage('booking')" class="nav-cta" id="nav-booking">Book Now</a>
     </div>
   </div>
 </nav>
@@ -612,20 +617,26 @@
         <div class="review">
           <div class="review-stars">★★★★★</div>
           <p>"Honestly the best cleaning service I've used in LA. They actually show up on time, follow a real checklist, and my place has never looked better."</p>
-          <div class="review-author">Sarah M.</div>
-          <div class="review-area">Culver City · Regular member</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:14px">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&q=80&fit=crop&crop=face" alt="Sarah M." style="width:38px;height:38px;border-radius:50%;object-fit:cover">
+            <div><div class="review-author">Sarah M.</div><div class="review-area">Culver City · Regular member</div></div>
+          </div>
         </div>
         <div class="review">
           <div class="review-stars">★★★★★</div>
           <p>"I referred three friends in my first month and got a free clean. The referral system is so easy — I just forwarded the card they texted me."</p>
-          <div class="review-author">Marcus T.</div>
-          <div class="review-area">Venice · Regular member</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:14px">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&q=80&fit=crop&crop=face" alt="Marcus T." style="width:38px;height:38px;border-radius:50%;object-fit:cover">
+            <div><div class="review-author">Marcus T.</div><div class="review-area">Venice · Regular member</div></div>
+          </div>
         </div>
         <div class="review">
           <div class="review-stars">★★★★★</div>
           <p>"Love that they use the same team every visit. My cleaner knows exactly how I like things done. Feels like a personal service, not a rotating crew."</p>
-          <div class="review-author">Priya K.</div>
-          <div class="review-area">Santa Monica · Premium member</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:14px">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&q=80&fit=crop&crop=face" alt="Priya K." style="width:38px;height:38px;border-radius:50%;object-fit:cover">
+            <div><div class="review-author">Priya K.</div><div class="review-area">Santa Monica · Premium member</div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -637,6 +648,62 @@
       <h2>Founding member spots are limited.</h2>
       <p>Lock in your rate for 12 months. First 15 clients only.</p>
       <button type="button" class="btn btn-white" onclick="showPage('booking')">Book your first clean →</button>
+    </div>
+  </div>
+
+  <!-- Contact / Quote Form -->
+  <div class="section section-alt" id="contact">
+    <div class="container" style="max-width:680px">
+      <div class="section-label" style="text-align:center">Get a quote</div>
+      <h2 class="section-title" style="text-align:center">Not sure which plan? Let us help.</h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto 36px">Large home, unusual job, or just want to talk it through? Fill this out and we'll get back to you within a few hours.</p>
+      <div style="background:white;border-radius:14px;padding:36px;box-shadow:var(--shadow)">
+        <div class="form-grid" style="margin-bottom:16px">
+          <div class="form-group"><label>First name</label><input type="text" placeholder="Maria"></div>
+          <div class="form-group"><label>Last name</label><input type="text" placeholder="Garcia"></div>
+        </div>
+        <div class="form-grid" style="margin-bottom:16px">
+          <div class="form-group"><label>Email</label><input type="email" placeholder="maria@email.com"></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="(310) 555-0000"></div>
+        </div>
+        <div class="form-grid" style="margin-bottom:16px">
+          <div class="form-group">
+            <label>Neighborhood</label>
+            <select>
+              <option>Culver City</option><option>Palms</option><option>Venice</option>
+              <option>Santa Monica</option><option>West Hollywood</option><option>Hollywood</option>
+              <option>Mid-City / West Adams</option><option>Miracle Mile</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Home size</label>
+            <select>
+              <option>Under 1,000 sq ft</option><option>1,000–1,500 sq ft</option>
+              <option>1,500–2,000 sq ft</option><option>2,000–2,500 sq ft</option>
+              <option>2,500–3,000 sq ft</option><option>3,000+ sq ft</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:20px">
+          <label>What are you looking for?</label>
+          <select>
+            <option>Regular membership (most popular)</option>
+            <option>Essential membership</option>
+            <option>Premium membership</option>
+            <option>One-time standard clean</option>
+            <option>One-time deep clean</option>
+            <option>Move-in / move-out clean</option>
+            <option>Post-construction clean</option>
+            <option>Not sure — just exploring</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:24px">
+          <label>Anything else we should know?</label>
+          <textarea placeholder="Pets, access info, specific concerns, timing…"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px" onclick="quoteSubmitted()">Send quote request →</button>
+        <p style="font-size:0.8rem;color:var(--slate);text-align:center;margin-top:12px">We reply within a few hours Mon–Fri. No spam, ever.</p>
+      </div>
     </div>
   </div>
 
@@ -658,8 +725,8 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <a>hello@peakcleanpros.com</a>
-          <a>(310) 000-0000</a>
+          <a href="mailto:hello@peakcleanpros.com" style="color:inherit">hello@peakcleanpros.com</a>
+          <a href="tel:3100000000" style="color:inherit">(310) 000-0000</a>
           <a>Mon–Fri, 8am–5pm</a>
         </div>
       </div>
@@ -906,65 +973,77 @@
      SERVICES PAGE
 ══════════════════════════════════════════════════════════ -->
 <div id="page-services" class="page page-body">
-  <div class="services-hero">
+  <div class="services-hero" style="background:linear-gradient(rgba(10,24,48,0.6),rgba(10,24,48,0.5)), url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=80&fit=crop') center/cover no-repeat; padding:80px 24px 64px; text-align:center; color:white;">
     <div class="container">
-      <div class="section-label">What we clean</div>
-      <h1 class="section-title">Every room. Every surface. Every time.</h1>
-      <p class="section-sub">Our room-by-room checklist means nothing gets skipped. The same thorough standard on every visit.</p>
+      <div class="section-label" style="color:rgba(255,255,255,0.75)">What we clean</div>
+      <h1 class="section-title" style="color:white">Every room. Every surface. Every time.</h1>
+      <p class="section-sub" style="color:rgba(255,255,255,0.82); margin:0 auto">Our room-by-room checklist means nothing gets skipped. The same thorough standard on every visit.</p>
     </div>
   </div>
 
   <div class="container">
     <div class="services-grid">
       <div class="service-item">
-        <div class="service-icon">🛋️</div>
-        <h3>Living Areas</h3>
-        <p>Dusted, vacuumed, and wiped down from ceiling fans to baseboards.</p>
-        <ul class="service-includes">
-          <li>Dust all surfaces, shelves &amp; décor</li>
-          <li>Vacuum upholstered furniture</li>
-          <li>Wipe windowsills &amp; ledges</li>
-          <li>Sweep, vacuum &amp; mop floors</li>
-          <li>Empty trash and replace liner</li>
-        </ul>
+        <img class="service-photo" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&fit=crop&crop=center" alt="Clean living room with warm lighting" loading="lazy">
+        <div class="service-body">
+          <div class="service-icon">🛋️</div>
+          <h3>Living Areas</h3>
+          <p>Dusted, vacuumed, and wiped down from ceiling fans to baseboards — so your home feels settled and peaceful.</p>
+          <ul class="service-includes">
+            <li>Dust all surfaces, shelves &amp; décor</li>
+            <li>Vacuum upholstered furniture</li>
+            <li>Wipe windowsills &amp; ledges</li>
+            <li>Sweep, vacuum &amp; mop floors</li>
+            <li>Empty trash and replace liner</li>
+          </ul>
+        </div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🍳</div>
-        <h3>Kitchen</h3>
-        <p>Degreased, sanitized, and sparkling — including all appliance exteriors.</p>
-        <ul class="service-includes">
-          <li>Clean countertops &amp; backsplash</li>
-          <li>Wipe exterior of all appliances</li>
-          <li>Clean stovetop &amp; drip pans</li>
-          <li>Scrub sink &amp; faucets</li>
-          <li>Clean cabinet door fronts</li>
-          <li>Sweep &amp; mop floor</li>
-        </ul>
+        <img class="service-photo" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&fit=crop&crop=center" alt="Clean modern kitchen" loading="lazy">
+        <div class="service-body">
+          <div class="service-icon">🍳</div>
+          <h3>Kitchen</h3>
+          <p>Degreased, sanitized, and sparkling — including all appliance exteriors. The heart of the home, at its best.</p>
+          <ul class="service-includes">
+            <li>Clean countertops &amp; backsplash</li>
+            <li>Wipe exterior of all appliances</li>
+            <li>Clean stovetop &amp; drip pans</li>
+            <li>Scrub sink &amp; faucets</li>
+            <li>Clean cabinet door fronts</li>
+            <li>Sweep &amp; mop floor</li>
+          </ul>
+        </div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🛁</div>
-        <h3>Bathrooms</h3>
-        <p>Full scrub and disinfect. The room that matters most to guests.</p>
-        <ul class="service-includes">
-          <li>Scrub toilet inside &amp; out</li>
-          <li>Clean shower, tub &amp; tile</li>
-          <li>Wipe mirror &amp; vanity</li>
-          <li>Polish faucets &amp; fixtures</li>
-          <li>Scrub sink &amp; drain area</li>
-          <li>Mop floor, wipe baseboards</li>
-        </ul>
+        <img class="service-photo" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80&fit=crop&crop=center" alt="Bright clean bathroom" loading="lazy">
+        <div class="service-body">
+          <div class="service-icon">🛁</div>
+          <h3>Bathrooms</h3>
+          <p>Full scrub and disinfect on every surface. The room your guests notice most — and the one we take most seriously.</p>
+          <ul class="service-includes">
+            <li>Scrub toilet inside &amp; out</li>
+            <li>Clean shower, tub &amp; tile</li>
+            <li>Wipe mirror &amp; vanity</li>
+            <li>Polish faucets &amp; fixtures</li>
+            <li>Scrub sink &amp; drain area</li>
+            <li>Mop floor, wipe baseboards</li>
+          </ul>
+        </div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🛏️</div>
-        <h3>Bedrooms</h3>
-        <p>Dusted, vacuumed, and made — so you come home to a bedroom that feels like a hotel.</p>
-        <ul class="service-includes">
-          <li>Make bed &amp; straighten linens</li>
-          <li>Dust furniture, lamps &amp; ceiling fans</li>
-          <li>Wipe nightstands &amp; dressers</li>
-          <li>Vacuum carpet or mop hardwood</li>
-          <li>Empty trash</li>
-        </ul>
+        <img class="service-photo" src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80&fit=crop&crop=center" alt="Warm cozy bedroom" loading="lazy">
+        <div class="service-body">
+          <div class="service-icon">🛏️</div>
+          <h3>Bedrooms</h3>
+          <p>Dusted, vacuumed, and made — so you come home to a bedroom that feels calm, considered, and completely clean.</p>
+          <ul class="service-includes">
+            <li>Make bed &amp; straighten linens</li>
+            <li>Dust furniture, lamps &amp; ceiling fans</li>
+            <li>Wipe nightstands &amp; dressers</li>
+            <li>Vacuum carpet or mop hardwood</li>
+            <li>Empty trash</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -1640,6 +1719,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   initCalendar();
 });
+
+function quoteSubmitted() {
+  const btn = event.target;
+  btn.textContent = '✓ Request sent! We\'ll be in touch shortly.';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+}
 </script>
+
+<!-- Tawk.to Live Chat — replace with your own Tawk.to widget code -->
+<!-- Sign up free at tawk.to, get your embed code and paste it here -->
+<!-- <script type="text/javascript"> var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); (function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default'; s1.charset='UTF-8'; s1.setAttribute('crossorigin','*'); s0.parentNode.insertBefore(s1,s0); })(); </script> -->
+
 </body>
 </html>
