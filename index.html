@@ -1,84 +1,1565 @@
-Peak.
-Home
-Services
-Pricing
-Admin
-Book Now
-NOW SERVING LA'S WESTSIDE
-Your space at its peak.
-Professional recurring home cleaning for Culver City, Venice, Santa Monica, West Hollywood, and surrounding neighborhoods.
-Book your first clean → View membership plans
-100%
-Background checked
-$0
-First clean for referrals
-12mo
-Founding member rate lock
-100%
-Satisfaction guarantee
-Serving: Culver City · Palms · West Hollywood · Hollywood · Venice · Santa Monica · Mid-City · West Adams · Miracle Mile
-HOW IT WORKS
-Simple, recurring, reliable.
-No one-off pricing surprises. You pick a plan, we show up on schedule, every time.
-1
-Choose your plan
-Pick Essential, Regular, or Premium based on how often your home needs attention. Lock in your founding member rate for 12 months.
-2
-We confirm & prep
-You'll get a confirmation text, a reminder 24 hours before, and a window time so you're never waiting around all day.
-3
-We clean, you relax
-Our trained team arrives on time, works through a room-by-room checklist, and texts you when done. Auto-charged to your card on file.
-4
-You share, you save
-Refer a neighbor and you both get $25 off your next clean. Refer three in a month and your next clean is on us.
-MEMBERSHIP PLANS
-Flat rate. No surprises.
-All plans include the same thorough room-by-room clean. You choose how often.
-ESSENTIAL
-$149/mo
-1 standard clean per month
-		Full home standard clean All rooms, surfaces & floors Bathroom deep scrub Kitchen appliance exteriors 12-month founding rate lock
-Get started
-Most popular
-REGULAR
-$249/mo
-2 standard cleans per month
-		Everything in Essential Bi-weekly scheduling priority Same team every visit Free next month for 1 referral 12-month founding rate lock
-Get started
-PREMIUM
-$399/mo
-4 standard cleans per month
-		Everything in Regular Weekly scheduling Priority booking & rescheduling Add-on deep clean discounts 12-month founding rate lock
-Get started
-WHAT CLIENTS SAY
-Trusted by LA homeowners.
-★★★★★
-"Honestly the best cleaning service I've used in LA. They actually show up on time, follow a real checklist, and my place has never looked better."
-Sarah M.
-Culver City · Regular member
-★★★★★
-"I referred three friends in my first month and got a free clean. The referral system is so easy — I just forwarded the card they texted me."
-Marcus T.
-Venice · Regular member
-★★★★★
-"Love that they use the same team every visit. My cleaner knows exactly how I like things done. Feels like a personal service, not a rotating crew."
-Priya K.
-Santa Monica · Premium member
-Founding member spots are limited.
-Lock in your rate for 12 months. First 15 clients only.
-Book your first clean →
-Peak.
-Professional recurring home cleaning for LA's Westside. Your space at its peak.
-📍 Serving Culver City, Venice, Santa Monica, West Hollywood & more
-COMPANY
-Home
-Services
-Pricing
-Book Now
-CONTACT
-hello@peakcleaning.com
-(310) 000-0000
-Mon–Fri, 8am–5pm
-© 2026 Peak Cleaning LLC. All rights reserved.
-Licensed · Bonded · Insured
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peak Cleaning — Your space at its peak</title>
+<style>
+  /* ── Tokens ────────────────────────────────────────────────── */
+  :root {
+    --navy:    #0F2A4A;
+    --blue:    #1565C0;
+    --sky:     #E8F1FB;
+    --ice:     #F4F8FE;
+    --white:   #FFFFFF;
+    --slate:   #4A5568;
+    --mist:    #CBD5E0;
+    --gold:    #F59E0B;
+    --green:   #16A34A;
+    --red:     #DC2626;
+    --text:    #1A202C;
+    --radius:  8px;
+    --shadow:  0 2px 16px rgba(15,42,74,0.10);
+    --shadow-lg: 0 8px 40px rgba(15,42,74,0.15);
+    --font-display: 'Georgia', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --max: 1100px;
+    --transition: 0.2s ease;
+  }
+
+  /* ── Reset ─────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; }
+  img { max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { cursor: pointer; font-family: inherit; border: none; }
+
+  /* ── Layout helpers ─────────────────────────────────────────── */
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  .hidden { display: none !important; }
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* ── Nav ────────────────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--white); border-bottom: 1px solid var(--mist);
+    box-shadow: 0 1px 8px rgba(15,42,74,0.07);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px; max-width: var(--max); margin: 0 auto; padding: 0 24px;
+  }
+  .nav-logo {
+    font-family: var(--font-display); font-size: 1.35rem;
+    color: var(--navy); font-weight: 700; letter-spacing: -0.3px;
+  }
+  .nav-logo span { color: var(--blue); }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a {
+    font-size: 0.9rem; color: var(--slate); font-weight: 500;
+    transition: color var(--transition); cursor: pointer;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+  .nav-cta {
+    background: var(--blue); color: var(--white) !important;
+    padding: 9px 20px; border-radius: var(--radius);
+    font-size: 0.88rem !important; font-weight: 600 !important;
+    transition: background var(--transition) !important;
+  }
+  .nav-cta:hover { background: var(--navy) !important; }
+
+  /* ── Btn system ─────────────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 28px; border-radius: var(--radius);
+    font-size: 0.95rem; font-weight: 600; transition: all var(--transition);
+    cursor: pointer; border: none;
+  }
+  .btn-primary { background: var(--blue); color: var(--white); }
+  .btn-primary:hover { background: var(--navy); transform: translateY(-1px); box-shadow: var(--shadow); }
+  .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+  .btn-outline:hover { background: var(--navy); color: var(--white); }
+  .btn-white { background: var(--white); color: var(--navy); }
+  .btn-white:hover { background: var(--sky); }
+  .btn-sm { padding: 8px 16px; font-size: 0.85rem; }
+  .btn-green { background: var(--green); color: var(--white); }
+  .btn-green:hover { background: #15803d; }
+  .btn-red { background: var(--red); color: var(--white); }
+
+  /* ── Page top spacing ───────────────────────────────────────── */
+  .page-body { padding-top: 64px; }
+
+  /* ══════════════════════════════════════════════════════════════
+     HOME PAGE
+  ══════════════════════════════════════════════════════════════ */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #1A3A6B 60%, #1565C0 100%);
+    padding: 100px 24px 90px; text-align: center; color: var(--white);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-eyebrow {
+    display: inline-block; background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.9); font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 20px; margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 700; line-height: 1.15; margin-bottom: 20px;
+    max-width: 680px; margin-left: auto; margin-right: auto;
+  }
+  .hero h1 em { font-style: normal; color: #93C5FD; }
+  .hero p {
+    font-size: 1.15rem; color: rgba(255,255,255,0.82);
+    max-width: 520px; margin: 0 auto 36px; line-height: 1.7;
+  }
+  .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .hero-badges {
+    display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+    margin-top: 52px; padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .hero-badge { text-align: center; color: rgba(255,255,255,0.85); }
+  .hero-badge strong { display: block; font-size: 1.6rem; font-weight: 700; color: var(--white); }
+  .hero-badge span { font-size: 0.82rem; opacity: 0.75; }
+
+  /* Areas strip */
+  .areas-strip { background: var(--sky); padding: 18px 24px; text-align: center; }
+  .areas-strip p { font-size: 0.88rem; color: var(--slate); }
+  .areas-strip p strong { color: var(--navy); }
+
+  /* How it works */
+  .section { padding: 80px 24px; }
+  .section-alt { background: var(--ice); }
+  .section-label {
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--blue); margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-weight: 700; color: var(--navy); margin-bottom: 16px; line-height: 1.2;
+  }
+  .section-sub { color: var(--slate); font-size: 1.05rem; max-width: 560px; line-height: 1.7; }
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 52px; }
+  .step {
+    background: var(--white); border-radius: 12px; padding: 32px 28px;
+    box-shadow: var(--shadow); border-top: 3px solid var(--blue);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .step:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .step-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--sky); color: var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1.1rem; margin-bottom: 20px;
+  }
+  .step h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .step p { font-size: 0.9rem; color: var(--slate); line-height: 1.6; }
+
+  /* Tiers / pricing preview on homepage */
+  .tier-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
+  .tier-card {
+    background: var(--white); border-radius: 12px; padding: 36px 28px;
+    box-shadow: var(--shadow); border: 2px solid transparent;
+    transition: all var(--transition); position: relative;
+  }
+  .tier-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .tier-card.featured { border-color: var(--blue); }
+  .tier-badge {
+    position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+    background: var(--blue); color: var(--white); font-size: 0.75rem;
+    font-weight: 700; padding: 4px 14px; border-radius: 12px; white-space: nowrap;
+    letter-spacing: 0.5px;
+  }
+  .tier-name { font-size: 0.8rem; font-weight: 700; color: var(--blue); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+  .tier-price { font-family: var(--font-display); font-size: 2.6rem; font-weight: 700; color: var(--navy); line-height: 1; }
+  .tier-price sup { font-size: 1.2rem; vertical-align: top; margin-top: 8px; }
+  .tier-price sub { font-size: 0.9rem; font-weight: 400; color: var(--slate); }
+  .tier-freq { font-size: 0.85rem; color: var(--slate); margin: 8px 0 20px; }
+  .tier-features { list-style: none; margin-bottom: 28px; }
+  .tier-features li { font-size: 0.9rem; color: var(--slate); padding: 7px 0; border-bottom: 1px solid var(--sky); display: flex; gap: 10px; align-items: flex-start; }
+  .tier-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+  /* Testimonials */
+  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+  .review {
+    background: var(--white); border-radius: 12px; padding: 28px;
+    box-shadow: var(--shadow);
+  }
+  .review-stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; }
+  .review p { font-size: 0.92rem; color: var(--slate); line-height: 1.7; font-style: italic; margin-bottom: 16px; }
+  .review-author { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+  .review-area { font-size: 0.8rem; color: var(--slate); }
+
+  /* CTA banner */
+  .cta-banner {
+    background: var(--navy); padding: 72px 24px; text-align: center; color: var(--white);
+  }
+  .cta-banner h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 16px; }
+  .cta-banner p { color: rgba(255,255,255,0.78); font-size: 1.05rem; margin-bottom: 32px; }
+
+  /* Footer */
+  footer {
+    background: #0A1E35; color: rgba(255,255,255,0.65);
+    padding: 48px 24px 28px;
+  }
+  .footer-inner { max-width: var(--max); margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+  .footer-logo { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); font-weight: 700; margin-bottom: 12px; }
+  .footer-logo span { color: #93C5FD; }
+  .footer-tagline { font-size: 0.85rem; line-height: 1.6; margin-bottom: 16px; }
+  .footer-col h4 { color: var(--white); font-size: 0.85rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .footer-col a { display: block; font-size: 0.85rem; margin-bottom: 8px; cursor: pointer; transition: color var(--transition); }
+  .footer-col a:hover { color: var(--white); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 12px; }
+  .footer-bottom p { font-size: 0.8rem; }
+
+  /* ══════════════════════════════════════════════════════════════
+     BOOKING PAGE
+  ══════════════════════════════════════════════════════════════ */
+  .booking-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    padding: 60px 24px 48px; color: var(--white); text-align: center;
+  }
+  .booking-hero h1 { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 10px; }
+  .booking-hero p { color: rgba(255,255,255,0.8); font-size: 1rem; }
+
+  .booking-body { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  .progress-bar { display: flex; gap: 0; margin-bottom: 44px; }
+  .progress-step {
+    flex: 1; text-align: center; padding: 12px 4px;
+    border-bottom: 3px solid var(--mist);
+    font-size: 0.82rem; font-weight: 600; color: var(--mist);
+    transition: all var(--transition);
+  }
+  .progress-step.done { border-color: var(--green); color: var(--green); }
+  .progress-step.active { border-color: var(--blue); color: var(--blue); }
+
+  .booking-step { display: none; }
+  .booking-step.active { display: block; }
+
+  .step-heading { font-family: var(--font-display); font-size: 1.5rem; color: var(--navy); margin-bottom: 6px; }
+  .step-sub { color: var(--slate); font-size: 0.92rem; margin-bottom: 32px; }
+
+  /* Plan cards in booking */
+  .plan-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .plan-card {
+    border: 2px solid var(--mist); border-radius: 10px; padding: 24px 20px;
+    cursor: pointer; transition: all var(--transition); position: relative;
+    background: var(--white);
+  }
+  .plan-card:hover { border-color: var(--blue); }
+  .plan-card.selected { border-color: var(--blue); background: var(--sky); }
+  .plan-card.selected::after {
+    content: '✓'; position: absolute; top: 12px; right: 14px;
+    width: 22px; height: 22px; background: var(--blue); color: var(--white);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .plan-card-name { font-size: 0.75rem; font-weight: 700; color: var(--blue); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+  .plan-card-price { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; color: var(--navy); line-height: 1; }
+  .plan-card-price span { font-size: 0.85rem; font-weight: 400; color: var(--slate); }
+  .plan-card-desc { font-size: 0.82rem; color: var(--slate); margin-top: 8px; line-height: 1.5; }
+
+  /* Form fields */
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .form-grid-1 { grid-template-columns: 1fr; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+  .form-group input, .form-group select, .form-group textarea {
+    border: 1.5px solid var(--mist); border-radius: var(--radius);
+    padding: 11px 14px; font-size: 0.92rem; font-family: inherit;
+    color: var(--text); background: var(--white);
+    transition: border-color var(--transition);
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--blue);
+  }
+  .form-group textarea { resize: vertical; min-height: 90px; }
+
+  /* Calendar */
+  .calendar-wrap { background: var(--ice); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+  .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .cal-header h3 { font-size: 1rem; font-weight: 700; color: var(--navy); }
+  .cal-nav { background: none; border: 1.5px solid var(--mist); border-radius: 6px; padding: 5px 10px; font-size: 0.9rem; color: var(--slate); cursor: pointer; transition: all var(--transition); }
+  .cal-nav:hover { border-color: var(--blue); color: var(--blue); }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .cal-day-label { text-align: center; font-size: 0.72rem; font-weight: 700; color: var(--slate); padding: 4px 0; }
+  .cal-day {
+    aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    border-radius: 6px; font-size: 0.85rem; cursor: pointer;
+    transition: all var(--transition); color: var(--text);
+  }
+  .cal-day:hover { background: var(--sky); color: var(--blue); }
+  .cal-day.available { background: #EFF6FF; color: var(--blue); font-weight: 600; }
+  .cal-day.selected { background: var(--blue); color: var(--white); font-weight: 700; }
+  .cal-day.empty { cursor: default; }
+  .cal-day.past { color: var(--mist); cursor: default; }
+
+  .time-slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 24px; }
+  .time-slot {
+    border: 1.5px solid var(--mist); border-radius: 8px; padding: 10px 6px;
+    text-align: center; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+    color: var(--slate); transition: all var(--transition);
+  }
+  .time-slot:hover { border-color: var(--blue); color: var(--blue); }
+  .time-slot.selected { border-color: var(--blue); background: var(--sky); color: var(--blue); }
+  .time-slot.unavailable { background: var(--ice); color: var(--mist); cursor: default; border-color: transparent; }
+
+  /* Booking summary */
+  .booking-summary {
+    background: var(--sky); border-radius: 10px; padding: 24px;
+    margin-bottom: 28px; border: 1.5px solid #BFDBFE;
+  }
+  .summary-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #BFDBFE; font-size: 0.9rem; }
+  .summary-row:last-child { border-bottom: none; font-weight: 700; color: var(--navy); font-size: 1rem; margin-top: 4px; }
+  .summary-row span:first-child { color: var(--slate); }
+
+  /* Confirmation */
+  .confirmation {
+    text-align: center; padding: 48px 24px;
+  }
+  .confirm-icon {
+    width: 72px; height: 72px; background: #DCFCE7; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; margin: 0 auto 24px;
+  }
+  .confirm-num { font-size: 0.85rem; color: var(--slate); margin-bottom: 8px; }
+  .confirm-num strong { color: var(--navy); font-family: monospace; }
+
+  /* Step nav */
+  .step-nav { display: flex; justify-content: space-between; margin-top: 32px; gap: 16px; }
+
+  /* ══════════════════════════════════════════════════════════════
+     SERVICES PAGE
+  ══════════════════════════════════════════════════════════════ */
+  .services-hero {
+    background: var(--sky); padding: 60px 24px 48px; text-align: center;
+  }
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 48px; }
+  .service-item {
+    padding: 40px 36px; border-bottom: 1px solid var(--mist); border-right: 1px solid var(--mist);
+    transition: background var(--transition);
+  }
+  .service-item:hover { background: var(--ice); }
+  .service-item:nth-child(even) { border-right: none; }
+  .service-icon { font-size: 2rem; margin-bottom: 16px; }
+  .service-item h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .service-item p { font-size: 0.9rem; color: var(--slate); line-height: 1.65; }
+  .service-includes { margin-top: 14px; }
+  .service-includes li { font-size: 0.83rem; color: var(--slate); padding: 3px 0; list-style: none; display: flex; gap: 8px; }
+  .service-includes li::before { content: '—'; color: var(--blue); }
+
+  .checklist-section { padding: 72px 24px; }
+  .checklist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+  .checklist-room h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--sky); }
+  .checklist-room ul { list-style: none; }
+  .checklist-room li { font-size: 0.87rem; color: var(--slate); padding: 5px 0; display: flex; gap: 10px; border-bottom: 1px solid var(--ice); }
+  .checklist-room li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+  /* ══════════════════════════════════════════════════════════════
+     PRICING PAGE
+  ══════════════════════════════════════════════════════════════ */
+  .pricing-hero { background: var(--navy); color: var(--white); padding: 60px 24px 48px; text-align: center; }
+  .pricing-hero h1 { font-family: var(--font-display); font-size: 2.4rem; margin-bottom: 12px; }
+  .pricing-hero p { color: rgba(255,255,255,0.78); font-size: 1rem; max-width: 500px; margin: 0 auto; }
+  .pricing-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; max-width: 1000px; margin-left: auto; margin-right: auto; }
+  .pricing-card {
+    background: var(--white); border-radius: 14px; padding: 40px 32px;
+    box-shadow: var(--shadow); border: 2px solid transparent; position: relative;
+    transition: all var(--transition);
+  }
+  .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .pricing-card.featured { border-color: var(--blue); }
+  .pricing-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--blue); color: var(--white); font-size: 0.75rem; font-weight: 700; padding: 5px 16px; border-radius: 14px; letter-spacing: 0.5px; white-space: nowrap; }
+
+  .faq-list { max-width: 720px; margin: 48px auto 0; }
+  .faq-item { border-bottom: 1px solid var(--mist); }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 0; cursor: pointer; font-weight: 600; color: var(--navy);
+    font-size: 0.95rem; gap: 12px;
+  }
+  .faq-q:hover { color: var(--blue); }
+  .faq-icon { color: var(--blue); font-size: 1.2rem; flex-shrink: 0; transition: transform var(--transition); }
+  .faq-a { font-size: 0.9rem; color: var(--slate); line-height: 1.7; padding-bottom: 18px; display: none; }
+  .faq-item.open .faq-a { display: block; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+  /* ══════════════════════════════════════════════════════════════
+     ADMIN / CRM PAGE
+  ══════════════════════════════════════════════════════════════ */
+  .admin-layout { display: flex; min-height: calc(100vh - 64px); }
+  .admin-sidebar {
+    width: 220px; flex-shrink: 0; background: var(--navy);
+    padding: 24px 0;
+  }
+  .admin-sidebar-logo { padding: 0 20px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 12px; }
+  .admin-sidebar-logo span { font-size: 0.75rem; color: rgba(255,255,255,0.5); display: block; margin-top: 2px; }
+  .sidebar-nav a {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 20px; font-size: 0.88rem; color: rgba(255,255,255,0.65);
+    cursor: pointer; transition: all var(--transition);
+  }
+  .sidebar-nav a:hover, .sidebar-nav a.active { background: rgba(255,255,255,0.1); color: var(--white); }
+  .sidebar-nav a .icon { font-size: 1rem; width: 20px; text-align: center; }
+
+  .admin-main { flex: 1; overflow: auto; padding: 32px 36px; background: var(--ice); }
+  .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+  .admin-header h1 { font-size: 1.4rem; font-weight: 700; color: var(--navy); }
+
+  /* Stat cards */
+  .stat-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 32px; }
+  .stat-card { background: var(--white); border-radius: 10px; padding: 24px; box-shadow: var(--shadow); }
+  .stat-label { font-size: 0.78rem; font-weight: 700; color: var(--slate); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .stat-value { font-size: 2rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+  .stat-delta { font-size: 0.82rem; }
+  .stat-delta.up { color: var(--green); }
+  .stat-delta.down { color: var(--red); }
+
+  /* Data tables */
+  .data-card { background: var(--white); border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 24px; overflow: hidden; }
+  .data-card-header { padding: 20px 24px; border-bottom: 1px solid var(--sky); display: flex; justify-content: space-between; align-items: center; }
+  .data-card-header h2 { font-size: 1rem; font-weight: 700; color: var(--navy); }
+  .data-table { width: 100%; border-collapse: collapse; }
+  .data-table th { background: var(--ice); padding: 11px 16px; text-align: left; font-size: 0.78rem; font-weight: 700; color: var(--slate); text-transform: uppercase; letter-spacing: 0.8px; }
+  .data-table td { padding: 13px 16px; font-size: 0.87rem; color: var(--text); border-bottom: 1px solid var(--sky); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: var(--ice); }
+
+  /* Status badges */
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 12px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .badge-green { background: #DCFCE7; color: #15803D; }
+  .badge-blue { background: #DBEAFE; color: #1D4ED8; }
+  .badge-yellow { background: #FEF9C3; color: #A16207; }
+  .badge-red { background: #FEE2E2; color: #DC2626; }
+  .badge-gray { background: var(--sky); color: var(--slate); }
+
+  /* Admin panels */
+  .admin-panel { display: none; }
+  .admin-panel.active { display: block; }
+
+  /* Admin new booking form */
+  .admin-form { background: var(--white); border-radius: 10px; box-shadow: var(--shadow); padding: 28px; margin-bottom: 24px; }
+  .admin-form h2 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 20px; }
+
+  /* Notification dot */
+  .notif { background: var(--red); color: var(--white); font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 8px; margin-left: auto; }
+
+  /* ── Responsive ─────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .form-grid { grid-template-columns: 1fr; }
+    .services-grid, .checklist-grid { grid-template-columns: 1fr; }
+    .pricing-cards { grid-template-columns: 1fr; }
+    .stat-cards { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .admin-sidebar { display: none; }
+    .admin-main { padding: 20px 16px; }
+    .service-item { border-right: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">
+      Peak<span>.</span>
+    </div>
+    <div class="nav-links">
+      <a onclick="showPage('home')" id="nav-home">Home</a>
+      <a onclick="showPage('services')" id="nav-services">Services</a>
+      <a onclick="showPage('pricing')" id="nav-pricing">Pricing</a>
+      <a onclick="showPage('admin')" id="nav-admin">Admin</a>
+      <a onclick="showPage('booking')" class="nav-cta" id="nav-booking">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="page-home" class="page page-body active">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">Now serving LA's Westside</div>
+      <h1>Your space<br><em>at its peak.</em></h1>
+      <p>Professional recurring home cleaning for Culver City, Venice, Santa Monica, West Hollywood, and surrounding neighborhoods.</p>
+      <div class="hero-btns">
+        <button type="button" class="btn btn-white" onclick="showPage('booking')">Book your first clean →</button>
+        <button type="button" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:white;position:relative;z-index:10" onclick="showPage('pricing')">View membership plans</button>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><strong>100%</strong><span>Background checked</span></div>
+        <div class="hero-badge"><strong>$0</strong><span>First clean for referrals</span></div>
+        <div class="hero-badge"><strong>12mo</strong><span>Founding member rate lock</span></div>
+        <div class="hero-badge"><strong>100%</strong><span>Satisfaction guarantee</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Areas -->
+  <div class="areas-strip">
+    <p><strong>Serving:</strong> Culver City · Palms · West Hollywood · Hollywood · Venice · Santa Monica · Mid-City · West Adams · Miracle Mile</p>
+  </div>
+
+  <!-- How it works -->
+  <div class="section">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">Simple, recurring, reliable.</h2>
+      <p class="section-sub">No one-off pricing surprises. You pick a plan, we show up on schedule, every time.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Choose your plan</h3>
+          <p>Pick Essential, Regular, or Premium based on how often your home needs attention. Lock in your founding member rate for 12 months.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>We confirm &amp; prep</h3>
+          <p>You'll get a confirmation text, a reminder 24 hours before, and a window time so you're never waiting around all day.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>We clean, you relax</h3>
+          <p>Our trained team arrives on time, works through a room-by-room checklist, and texts you when done. Auto-charged to your card on file.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>You share, you save</h3>
+          <p>Refer a neighbor and you both get $25 off your next clean. Refer three in a month and your next clean is on us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tier preview -->
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-label">Membership plans</div>
+      <h2 class="section-title">Flat rate. No surprises.</h2>
+      <p class="section-sub">All plans include the same thorough room-by-room clean. You choose how often.</p>
+      <div class="tier-cards">
+        <div class="tier-card">
+          <div class="tier-name">Essential</div>
+          <div class="tier-price"><sup>$</sup>149<sub>/mo</sub></div>
+          <div class="tier-freq">1 standard clean per month</div>
+          <ul class="tier-features">
+            <li>Full home standard clean</li>
+            <li>All rooms, surfaces &amp; floors</li>
+            <li>Bathroom deep scrub</li>
+            <li>Kitchen appliance exteriors</li>
+            <li>12-month founding rate lock</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%" onclick="showPage('booking')">Get started</button>
+        </div>
+        <div class="tier-card featured">
+          <div class="tier-badge">Most popular</div>
+          <div class="tier-name">Regular</div>
+          <div class="tier-price"><sup>$</sup>249<sub>/mo</sub></div>
+          <div class="tier-freq">2 standard cleans per month</div>
+          <ul class="tier-features">
+            <li>Everything in Essential</li>
+            <li>Bi-weekly scheduling priority</li>
+            <li>Same team every visit</li>
+            <li>Free next month for 1 referral</li>
+            <li>12-month founding rate lock</li>
+          </ul>
+          <button class="btn btn-primary" style="width:100%" onclick="showPage('booking')">Get started</button>
+        </div>
+        <div class="tier-card">
+          <div class="tier-name">Premium</div>
+          <div class="tier-price"><sup>$</sup>399<sub>/mo</sub></div>
+          <div class="tier-freq">4 standard cleans per month</div>
+          <ul class="tier-features">
+            <li>Everything in Regular</li>
+            <li>Weekly scheduling</li>
+            <li>Priority booking &amp; rescheduling</li>
+            <li>Add-on deep clean discounts</li>
+            <li>12-month founding rate lock</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%" onclick="showPage('booking')">Get started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews -->
+  <div class="section">
+    <div class="container">
+      <div class="section-label">What clients say</div>
+      <h2 class="section-title">Trusted by LA homeowners.</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"Honestly the best cleaning service I've used in LA. They actually show up on time, follow a real checklist, and my place has never looked better."</p>
+          <div class="review-author">Sarah M.</div>
+          <div class="review-area">Culver City · Regular member</div>
+        </div>
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"I referred three friends in my first month and got a free clean. The referral system is so easy — I just forwarded the card they texted me."</p>
+          <div class="review-author">Marcus T.</div>
+          <div class="review-area">Venice · Regular member</div>
+        </div>
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"Love that they use the same team every visit. My cleaner knows exactly how I like things done. Feels like a personal service, not a rotating crew."</p>
+          <div class="review-author">Priya K.</div>
+          <div class="review-area">Santa Monica · Premium member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Founding member spots are limited.</h2>
+      <p>Lock in your rate for 12 months. First 15 clients only.</p>
+      <button type="button" class="btn btn-white" onclick="showPage('booking')">Book your first clean →</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Peak<span>.</span></div>
+          <p class="footer-tagline">Professional recurring home cleaning for LA's Westside. Your space at its peak.</p>
+          <p style="font-size:0.82rem">📍 Serving Culver City, Venice, Santa Monica, West Hollywood &amp; more</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a onclick="showPage('home')">Home</a>
+          <a onclick="showPage('services')">Services</a>
+          <a onclick="showPage('pricing')">Pricing</a>
+          <a onclick="showPage('booking')">Book Now</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a>hello@peakcleaning.com</a>
+          <a>(310) 000-0000</a>
+          <a>Mon–Fri, 8am–5pm</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Peak Cleaning LLC. All rights reserved.</p>
+        <p>Licensed · Bonded · Insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     BOOKING PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="page-booking" class="page page-body">
+  <div class="booking-hero">
+    <h1>Book your clean</h1>
+    <p>Takes about 2 minutes. Confirmation sent instantly.</p>
+  </div>
+  <div class="booking-body">
+    <!-- Progress -->
+    <div class="progress-bar">
+      <div class="progress-step active" id="prog-1">1 · Plan</div>
+      <div class="progress-step" id="prog-2">2 · Home</div>
+      <div class="progress-step" id="prog-3">3 · Schedule</div>
+      <div class="progress-step" id="prog-4">4 · You</div>
+      <div class="progress-step" id="prog-5">5 · Confirm</div>
+    </div>
+
+    <!-- Step 1: Plan -->
+    <div class="booking-step active" id="step-1">
+      <h2 class="step-heading">Choose your membership plan</h2>
+      <p class="step-sub">All plans include the same thorough clean. You choose how often. Founding rate locked for 12 months.</p>
+      <div class="plan-cards">
+        <div class="plan-card" onclick="selectPlan(this,'Essential','149','1x per month')">
+          <div class="plan-card-name">Essential</div>
+          <div class="plan-card-price">$149<span>/mo</span></div>
+          <div class="plan-card-desc">1 standard clean per month. Best for homes that stay tidy between visits.</div>
+        </div>
+        <div class="plan-card selected" onclick="selectPlan(this,'Regular','249','2x per month')">
+          <div class="plan-card-name">⭐ Regular</div>
+          <div class="plan-card-price">$249<span>/mo</span></div>
+          <div class="plan-card-desc">2 cleans per month. Our flagship plan. Most popular with families and professionals.</div>
+        </div>
+        <div class="plan-card" onclick="selectPlan(this,'Premium','399','4x per month')">
+          <div class="plan-card-name">Premium</div>
+          <div class="plan-card-price">$399<span>/mo</span></div>
+          <div class="plan-card-desc">4 cleans per month. Weekly service for homes that are always guest-ready.</div>
+        </div>
+      </div>
+      <div style="background:var(--sky);border-radius:8px;padding:16px 20px;font-size:0.88rem;color:var(--slate);margin-bottom:24px;">
+        💡 <strong>Founding member offer:</strong> Your rate is locked for 12 months. Plus — refer one friend who books a plan and your next month is free.
+      </div>
+      <div class="step-nav">
+        <div></div>
+        <button class="btn btn-primary" onclick="nextStep(2)">Continue → Home details</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Home details -->
+    <div class="booking-step" id="step-2">
+      <h2 class="step-heading">Tell us about your home</h2>
+      <p class="step-sub">This helps us schedule the right amount of time for your first visit.</p>
+      <div class="form-grid" style="margin-bottom:16px">
+        <div class="form-group">
+          <label>Bedrooms</label>
+          <select id="bedrooms">
+            <option>Studio</option>
+            <option>1 bedroom</option>
+            <option selected>2 bedrooms</option>
+            <option>3 bedrooms</option>
+            <option>4+ bedrooms</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Bathrooms</label>
+          <select id="bathrooms">
+            <option>1 bathroom</option>
+            <option selected>2 bathrooms</option>
+            <option>3 bathrooms</option>
+            <option>4+ bathrooms</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid" style="margin-bottom:16px">
+        <div class="form-group">
+          <label>Neighborhood</label>
+          <select id="neighborhood">
+            <option>Culver City</option>
+            <option>Palms</option>
+            <option>Venice</option>
+            <option>Santa Monica</option>
+            <option>West Hollywood</option>
+            <option>Hollywood</option>
+            <option>Mid-City / West Adams</option>
+            <option>Miracle Mile</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Approximate sq ft</label>
+          <select id="sqft">
+            <option>Under 800 sq ft</option>
+            <option selected>800–1,200 sq ft</option>
+            <option>1,200–1,800 sq ft</option>
+            <option>1,800–2,500 sq ft</option>
+            <option>2,500+ sq ft</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid form-grid-1" style="margin-bottom:16px">
+        <div class="form-group">
+          <label>Pets at home?</label>
+          <select id="pets">
+            <option>No pets</option>
+            <option>1 dog</option>
+            <option>2+ dogs</option>
+            <option>1 cat</option>
+            <option>2+ cats</option>
+            <option>Mixed pets</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid form-grid-1">
+        <div class="form-group">
+          <label>Anything we should know? (access codes, fragile items, preferences)</label>
+          <textarea id="notes" placeholder="e.g. Key under mat, please avoid the antique dresser, allergic to citrus products…"></textarea>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="nextStep(1)">← Back</button>
+        <button class="btn btn-primary" onclick="nextStep(3)">Continue → Schedule</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Schedule -->
+    <div class="booking-step" id="step-3">
+      <h2 class="step-heading">Pick your first clean date</h2>
+      <p class="step-sub">We're available Monday through Friday. Choose a date and preferred time window.</p>
+      <div class="calendar-wrap">
+        <div class="cal-header">
+          <button class="cal-nav" onclick="changeMonth(-1)">‹ Prev</button>
+          <h3 id="cal-title">September 2026</h3>
+          <button class="cal-nav" onclick="changeMonth(1)">Next ›</button>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+      <p style="font-size:0.85rem;color:var(--slate);margin-bottom:14px;font-weight:600">Preferred arrival window</p>
+      <div class="time-slots">
+        <div class="time-slot selected" onclick="selectTime(this,'8:00–10:00 AM')">8:00–10:00 AM</div>
+        <div class="time-slot" onclick="selectTime(this,'10:00 AM–12:00 PM')">10:00 AM–12 PM</div>
+        <div class="time-slot" onclick="selectTime(this,'12:00–2:00 PM')">12:00–2:00 PM</div>
+        <div class="time-slot unavailable">2:00–4:00 PM</div>
+        <div class="time-slot" onclick="selectTime(this,'Open to any time')">Open / flexible</div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="nextStep(2)">← Back</button>
+        <button class="btn btn-primary" onclick="nextStep(4)">Continue → Your info</button>
+      </div>
+    </div>
+
+    <!-- Step 4: Contact info -->
+    <div class="booking-step" id="step-4">
+      <h2 class="step-heading">Your contact details</h2>
+      <p class="step-sub">We'll send your confirmation and appointment reminders here.</p>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>First name</label>
+          <input type="text" id="fname" placeholder="Maria">
+        </div>
+        <div class="form-group">
+          <label>Last name</label>
+          <input type="text" id="lname" placeholder="Garcia">
+        </div>
+      </div>
+      <div class="form-grid" style="margin-top:16px">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" id="email" placeholder="maria@email.com">
+        </div>
+        <div class="form-group">
+          <label>Mobile number</label>
+          <input type="tel" id="phone" placeholder="(310) 555-0000">
+        </div>
+      </div>
+      <div class="form-grid form-grid-1" style="margin-top:16px">
+        <div class="form-group">
+          <label>Street address</label>
+          <input type="text" id="address" placeholder="123 Main St, Culver City, CA 90232">
+        </div>
+      </div>
+      <div class="form-grid form-grid-1" style="margin-top:16px">
+        <div class="form-group">
+          <label>Referral code (optional)</label>
+          <input type="text" id="referral" placeholder="e.g. SARAH25">
+        </div>
+      </div>
+      <div style="background:var(--sky);border-radius:8px;padding:14px 18px;font-size:0.85rem;color:var(--slate);margin-top:20px;">
+        🔒 Payment info is collected separately after booking confirmation. You won't be charged until after your first clean.
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="nextStep(3)">← Back</button>
+        <button class="btn btn-primary" onclick="nextStep(5)">Review booking →</button>
+      </div>
+    </div>
+
+    <!-- Step 5: Confirm -->
+    <div class="booking-step" id="step-5">
+      <h2 class="step-heading">Review &amp; confirm</h2>
+      <p class="step-sub">Everything look right? Hit confirm and we'll send your booking details by text and email.</p>
+      <div class="booking-summary" id="booking-summary"></div>
+      <div style="font-size:0.85rem;color:var(--slate);margin-bottom:24px;line-height:1.6">
+        By confirming you agree to Peak Cleaning's cancellation policy (24-hour notice required) and authorize recurring monthly charges after your first visit.
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="nextStep(4)">← Back</button>
+        <button class="btn btn-green" onclick="confirmBooking()" style="padding:14px 32px;font-size:1rem">✓ Confirm booking</button>
+      </div>
+    </div>
+
+    <!-- Confirmation screen -->
+    <div class="booking-step" id="step-confirmed">
+      <div class="confirmation">
+        <div class="confirm-icon">✓</div>
+        <h2 class="step-heading">You're booked!</h2>
+        <p class="confirm-num">Booking reference: <strong id="booking-ref"></strong></p>
+        <p style="color:var(--slate);margin:16px 0 28px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.7">
+          We've sent your confirmation to your email and phone. You'll get a reminder text 24 hours before your first clean.
+        </p>
+        <div style="background:var(--sky);border-radius:10px;padding:24px;max-width:400px;margin:0 auto 32px;text-align:left">
+          <p style="font-size:0.85rem;font-weight:700;color:var(--navy);margin-bottom:10px">Your referral card</p>
+          <p style="font-size:0.85rem;color:var(--slate);margin-bottom:14px">Share this code with friends — they get $25 off their first clean, you get $25 off your next one.</p>
+          <div style="background:var(--white);border:2px dashed var(--blue);border-radius:8px;padding:16px;text-align:center">
+            <p style="font-size:1.4rem;font-weight:700;color:var(--blue);letter-spacing:3px;font-family:monospace" id="referral-code"></p>
+            <p style="font-size:0.78rem;color:var(--slate);margin-top:6px">peakcleaning.com · $25 off first clean</p>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="showPage('home')">Back to home</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     SERVICES PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="page-services" class="page page-body">
+  <div class="services-hero">
+    <div class="container">
+      <div class="section-label">What we clean</div>
+      <h1 class="section-title">Every room. Every surface. Every time.</h1>
+      <p class="section-sub">Our room-by-room checklist means nothing gets skipped. The same thorough standard on every visit.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-icon">🛋️</div>
+        <h3>Living Areas</h3>
+        <p>Dusted, vacuumed, and wiped down from ceiling fans to baseboards.</p>
+        <ul class="service-includes">
+          <li>Dust all surfaces, shelves &amp; décor</li>
+          <li>Vacuum upholstered furniture</li>
+          <li>Wipe windowsills &amp; ledges</li>
+          <li>Sweep, vacuum &amp; mop floors</li>
+          <li>Empty trash and replace liner</li>
+        </ul>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🍳</div>
+        <h3>Kitchen</h3>
+        <p>Degreased, sanitized, and sparkling — including all appliance exteriors.</p>
+        <ul class="service-includes">
+          <li>Clean countertops &amp; backsplash</li>
+          <li>Wipe exterior of all appliances</li>
+          <li>Clean stovetop &amp; drip pans</li>
+          <li>Scrub sink &amp; faucets</li>
+          <li>Clean cabinet door fronts</li>
+          <li>Sweep &amp; mop floor</li>
+        </ul>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🛁</div>
+        <h3>Bathrooms</h3>
+        <p>Full scrub and disinfect. The room that matters most to guests.</p>
+        <ul class="service-includes">
+          <li>Scrub toilet inside &amp; out</li>
+          <li>Clean shower, tub &amp; tile</li>
+          <li>Wipe mirror &amp; vanity</li>
+          <li>Polish faucets &amp; fixtures</li>
+          <li>Scrub sink &amp; drain area</li>
+          <li>Mop floor, wipe baseboards</li>
+        </ul>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🛏️</div>
+        <h3>Bedrooms</h3>
+        <p>Dusted, vacuumed, and made — so you come home to a bedroom that feels like a hotel.</p>
+        <ul class="service-includes">
+          <li>Make bed &amp; straighten linens</li>
+          <li>Dust furniture, lamps &amp; ceiling fans</li>
+          <li>Wipe nightstands &amp; dressers</li>
+          <li>Vacuum carpet or mop hardwood</li>
+          <li>Empty trash</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="checklist-section section-alt">
+    <div class="container">
+      <div class="section-label">Deep clean add-on</div>
+      <h2 class="section-title">First visit includes a deep clean.</h2>
+      <p class="section-sub">Every new client starts with a paid deep clean ($280–$320) before recurring service begins. This gets your home to baseline so every standard visit maintains that level.</p>
+      <div class="checklist-grid" style="margin-top:36px">
+        <div class="checklist-room">
+          <h3>Deep clean extras — Kitchen</h3>
+          <ul>
+            <li>Inside oven &amp; microwave</li>
+            <li>Inside refrigerator</li>
+            <li>Inside &amp; outside cabinet doors</li>
+            <li>Behind and under appliances</li>
+            <li>Grout cleaning on tile</li>
+          </ul>
+        </div>
+        <div class="checklist-room">
+          <h3>Deep clean extras — Bathrooms</h3>
+          <ul>
+            <li>Grout scrub on tile and shower</li>
+            <li>Behind toilet deep clean</li>
+            <li>Exhaust fan dusting</li>
+            <li>Wipe inside medicine cabinet</li>
+          </ul>
+        </div>
+        <div class="checklist-room">
+          <h3>Deep clean extras — Living areas</h3>
+          <ul>
+            <li>Baseboards hand-wiped</li>
+            <li>Window sill tracks</li>
+            <li>Behind and under furniture</li>
+            <li>Ceiling fan blade deep clean</li>
+            <li>Light switch plates &amp; outlets</li>
+          </ul>
+        </div>
+        <div class="checklist-room">
+          <h3>Deep clean extras — Bedrooms</h3>
+          <ul>
+            <li>Under bed vacuum</li>
+            <li>Inside closet floors</li>
+            <li>Wipe inside drawers (if requested)</li>
+            <li>Wipe inside closet shelves</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready to see the difference?</h2>
+      <p>Book your first clean today. Founding member rate, locked for 12 months.</p>
+      <button class="btn btn-white" onclick="showPage('booking')">Book now →</button>
+    </div>
+  </div>
+  <footer style="background:#0A1E35;color:rgba(255,255,255,0.65);padding:28px 24px;text-align:center">
+    <p style="font-size:0.82rem">© 2026 Peak Cleaning LLC · Licensed · Bonded · Insured</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PRICING PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="page-pricing" class="page page-body">
+  <div class="pricing-hero">
+    <h1>Flat rate. No surprises.</h1>
+    <p>Membership pricing with a 12-month founding rate lock for new clients. Cancel anytime with 30 days notice.</p>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="tier-name">Essential</div>
+          <div class="tier-price"><sup>$</sup>149<sub>/mo</sub></div>
+          <div class="tier-freq" style="margin:10px 0 24px">1 standard clean per month</div>
+          <ul class="tier-features">
+            <li>Full home standard clean</li>
+            <li>All rooms, surfaces &amp; floors</li>
+            <li>Bathroom disinfect &amp; scrub</li>
+            <li>Kitchen exterior &amp; counters</li>
+            <li>Automated booking &amp; reminders</li>
+            <li>Satisfaction guarantee</li>
+            <li>12-month rate lock (founding)</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%;margin-top:8px" onclick="showPage('booking')">Book Essential</button>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most popular</div>
+          <div class="tier-name">Regular</div>
+          <div class="tier-price"><sup>$</sup>249<sub>/mo</sub></div>
+          <div class="tier-freq" style="margin:10px 0 24px">2 standard cleans per month · $124.50 per visit</div>
+          <ul class="tier-features">
+            <li>Everything in Essential</li>
+            <li>Bi-weekly scheduling priority</li>
+            <li>Same team every visit</li>
+            <li>Free next month for 1 referral</li>
+            <li>Refer 3 in a month → next clean free</li>
+            <li>$25 off per referral both ways</li>
+            <li>12-month rate lock (founding)</li>
+          </ul>
+          <button class="btn btn-primary" style="width:100%;margin-top:8px" onclick="showPage('booking')">Book Regular</button>
+        </div>
+        <div class="pricing-card">
+          <div class="tier-name">Premium</div>
+          <div class="tier-price"><sup>$</sup>399<sub>/mo</sub></div>
+          <div class="tier-freq" style="margin:10px 0 24px">4 standard cleans per month · $99.75 per visit</div>
+          <ul class="tier-features">
+            <li>Everything in Regular</li>
+            <li>Weekly scheduling</li>
+            <li>Priority booking &amp; rescheduling</li>
+            <li>Deep clean add-on discount (15%)</li>
+            <li>Dedicated team assignment</li>
+            <li>12-month rate lock (founding)</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%;margin-top:8px" onclick="showPage('booking')">Book Premium</button>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;padding:24px;background:var(--sky);border-radius:12px;max-width:600px;margin-left:auto;margin-right:auto">
+        <p style="font-weight:700;color:var(--navy);margin-bottom:8px">First visit: paid deep clean required</p>
+        <p style="font-size:0.9rem;color:var(--slate)">Every new client starts with a one-time deep clean at $280–$320 (based on home size) before recurring service begins. This gets your home to baseline so every standard visit maintains that level.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section section-alt">
+    <div class="container">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Frequently asked</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>Can I cancel or pause my membership?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">Yes. Cancel anytime with 30 days written notice. There are no cancellation fees. Pausing for up to 30 days is available once per year for Premium and Regular members.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>Are your cleaners employees or contractors?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">All Peak Cleaning staff are fully trained to our standards and background-checked before their first job.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>Do I need to be home during the clean?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">No — most clients are out when we arrive. You can provide a key or access code at booking. We'll text you when we're on the way and again when we're done.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>What if I'm not satisfied with a clean?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">Text us within 24 hours and we'll come back to re-clean the area at no charge. No questions asked. Your satisfaction is the standard every visit is measured against.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>How does the referral program work?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">After your first clean you'll receive a personal referral code by text. Share it with a friend — when they book a recurring plan, you both get $25 off your next clean. Refer 3 in the same month and your next clean is completely free.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)"><span>What products do you use?</span><span class="faq-icon">+</span></div>
+          <div class="faq-a">We use professional-grade, pH-neutral cleaners that are safe for stone countertops and hardwood floors. Let us know at booking if you have product preferences or sensitivities and we'll accommodate them.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="background:#0A1E35;color:rgba(255,255,255,0.65);padding:28px 24px;text-align:center">
+    <p style="font-size:0.82rem">© 2026 Peak Cleaning LLC · Licensed · Bonded · Insured</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ADMIN / CRM PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="page-admin" class="page page-body">
+  <div class="admin-layout">
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+      <div class="admin-sidebar-logo">
+        <div class="footer-logo" style="font-size:1.1rem">Peak<span style="color:#93C5FD">.</span></div>
+        <span>Admin Dashboard</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="active" onclick="showAdmin('dashboard')" id="sa-dashboard"><span class="icon">📊</span> Dashboard</a>
+        <a onclick="showAdmin('bookings')" id="sa-bookings"><span class="icon">📅</span> Bookings <span class="notif">3</span></a>
+        <a onclick="showAdmin('clients')" id="sa-clients"><span class="icon">👥</span> Clients</a>
+        <a onclick="showAdmin('schedule')" id="sa-schedule"><span class="icon">🗓️</span> Schedule</a>
+        <a onclick="showAdmin('referrals')" id="sa-referrals"><span class="icon">🎁</span> Referrals</a>
+        <a onclick="showAdmin('revenue')" id="sa-revenue"><span class="icon">💰</span> Revenue</a>
+        <a onclick="showAdmin('new-booking')" id="sa-new-booking"><span class="icon">➕</span> New booking</a>
+      </nav>
+    </div>
+
+    <!-- Main area -->
+    <div class="admin-main">
+
+      <!-- DASHBOARD -->
+      <div class="admin-panel active" id="ap-dashboard">
+        <div class="admin-header">
+          <h1>Dashboard</h1>
+          <button class="btn btn-primary btn-sm" onclick="showAdmin('new-booking')">+ New booking</button>
+        </div>
+        <div class="stat-cards">
+          <div class="stat-card">
+            <div class="stat-label">Active clients</div>
+            <div class="stat-value">10</div>
+            <div class="stat-delta up">↑ Launch week</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Monthly revenue</div>
+            <div class="stat-value">$2,490</div>
+            <div class="stat-delta up">↑ 10 Regular members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Jobs this week</div>
+            <div class="stat-value">6</div>
+            <div class="stat-delta">Mon–Fri scheduled</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">To breakeven</div>
+            <div class="stat-value">8</div>
+            <div class="stat-delta">more Regular clients</div>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-header">
+            <h2>This week's jobs</h2>
+            <span style="font-size:0.82rem;color:var(--slate)">Aug 26–30, 2026</span>
+          </div>
+          <table class="data-table">
+            <thead><tr><th>Day</th><th>Client</th><th>Address</th><th>Plan</th><th>Time</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Mon Aug 26</td><td>Sarah M.</td><td>4210 Overland Ave, Culver City</td><td>Regular</td><td>9:00 AM</td><td><span class="badge badge-green">✓ Done</span></td></tr>
+              <tr><td>Mon Aug 26</td><td>Marcus T.</td><td>123 Rose Ave, Venice</td><td>Regular</td><td>1:00 PM</td><td><span class="badge badge-green">✓ Done</span></td></tr>
+              <tr><td>Tue Aug 27</td><td>Priya K.</td><td>1425 Ocean Ave, Santa Monica</td><td>Premium</td><td>9:00 AM</td><td><span class="badge badge-blue">En route</span></td></tr>
+              <tr><td>Wed Aug 28</td><td>James L.</td><td>880 N Kings Rd, West Hollywood</td><td>Regular</td><td>10:00 AM</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+              <tr><td>Thu Aug 29</td><td>Diana R.</td><td>6200 W 3rd St, Miracle Mile</td><td>Essential</td><td>9:00 AM</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+              <tr><td>Fri Aug 30</td><td>Tom &amp; Lisa H.</td><td>3340 Helms Ave, Palms</td><td>Regular</td><td>11:00 AM</td><td><span class="badge badge-gray">Pending confirm</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-header">
+            <h2>Referral activity</h2>
+            <span style="font-size:0.82rem;color:var(--green);font-weight:600">2 new leads this week</span>
+          </div>
+          <table class="data-table">
+            <thead><tr><th>Referred by</th><th>Lead name</th><th>Status</th><th>Credit earned</th></tr></thead>
+            <tbody>
+              <tr><td>Sarah M.</td><td>Jen W. (neighbor)</td><td><span class="badge badge-green">Booked</span></td><td>$25 off next clean</td></tr>
+              <tr><td>Marcus T.</td><td>Alex P. (coworker)</td><td><span class="badge badge-yellow">Contacted</span></td><td>Pending</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- BOOKINGS -->
+      <div class="admin-panel" id="ap-bookings">
+        <div class="admin-header">
+          <h1>Bookings</h1>
+          <button class="btn btn-primary btn-sm" onclick="showAdmin('new-booking')">+ New booking</button>
+        </div>
+        <div class="data-card">
+          <div class="data-card-header"><h2>All bookings</h2></div>
+          <table class="data-table">
+            <thead><tr><th>Ref #</th><th>Client</th><th>Plan</th><th>Neighborhood</th><th>Next clean</th><th>Monthly $</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td style="font-family:monospace">#PC-001</td><td>Sarah M.</td><td>Regular</td><td>Culver City</td><td>Sep 9</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-002</td><td>Marcus T.</td><td>Regular</td><td>Venice</td><td>Sep 9</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-003</td><td>Priya K.</td><td>Premium</td><td>Santa Monica</td><td>Sep 3</td><td>$399</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-004</td><td>James L.</td><td>Regular</td><td>West Hollywood</td><td>Sep 10</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-005</td><td>Diana R.</td><td>Essential</td><td>Miracle Mile</td><td>Sep 29</td><td>$149</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-006</td><td>Tom &amp; Lisa H.</td><td>Regular</td><td>Palms</td><td>Sep 11</td><td>$249</td><td><span class="badge badge-yellow">Pending</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-007</td><td>Carmen V.</td><td>Regular</td><td>Hollywood</td><td>Sep 9</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-008</td><td>David &amp; Anh N.</td><td>Regular</td><td>Mid-City</td><td>Sep 10</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-009</td><td>Rebecca S.</td><td>Regular</td><td>Culver City</td><td>Sep 11</td><td>$249</td><td><span class="badge badge-green">Active</span></td></tr>
+              <tr><td style="font-family:monospace">#PC-010</td><td>Michael B.</td><td>Regular</td><td>Venice</td><td>Sep 12</td><td>$249</td><td><span class="badge badge-blue">Deep clean scheduled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CLIENTS -->
+      <div class="admin-panel" id="ap-clients">
+        <div class="admin-header"><h1>Clients</h1></div>
+        <div class="data-card">
+          <div class="data-card-header">
+            <h2>Client roster (10 active)</h2>
+            <span style="font-size:0.82rem;color:var(--blue);font-weight:600">$2,490/mo recurring</span>
+          </div>
+          <table class="data-table">
+            <thead><tr><th>Name</th><th>Plan</th><th>Neighborhood</th><th>Referrals</th><th>Since</th><th>LTV (12mo)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Sarah M.</strong></td><td>Regular</td><td>Culver City</td><td>1 → Jen W.</td><td>Aug 26</td><td>$2,988</td></tr>
+              <tr><td><strong>Marcus T.</strong></td><td>Regular</td><td>Venice</td><td>1 → Alex P.</td><td>Aug 26</td><td>$2,988</td></tr>
+              <tr><td><strong>Priya K.</strong></td><td>Premium</td><td>Santa Monica</td><td>0</td><td>Aug 26</td><td>$4,788</td></tr>
+              <tr><td><strong>James L.</strong></td><td>Regular</td><td>West Hollywood</td><td>0</td><td>Aug 26</td><td>$2,988</td></tr>
+              <tr><td><strong>Diana R.</strong></td><td>Essential</td><td>Miracle Mile</td><td>0</td><td>Aug 26</td><td>$1,788</td></tr>
+              <tr><td><strong>Tom &amp; Lisa H.</strong></td><td>Regular</td><td>Palms</td><td>0</td><td>Aug 27</td><td>$2,988</td></tr>
+              <tr><td><strong>Carmen V.</strong></td><td>Regular</td><td>Hollywood</td><td>0</td><td>Aug 27</td><td>$2,988</td></tr>
+              <tr><td><strong>David &amp; Anh N.</strong></td><td>Regular</td><td>Mid-City</td><td>0</td><td>Aug 27</td><td>$2,988</td></tr>
+              <tr><td><strong>Rebecca S.</strong></td><td>Regular</td><td>Culver City</td><td>0</td><td>Aug 28</td><td>$2,988</td></tr>
+              <tr><td><strong>Michael B.</strong></td><td>Regular</td><td>Venice</td><td>0</td><td>Aug 28</td><td>$2,988</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SCHEDULE -->
+      <div class="admin-panel" id="ap-schedule">
+        <div class="admin-header"><h1>Schedule</h1></div>
+        <div class="data-card" style="padding:24px">
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px">
+            <div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue)">MON</div>
+            <div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue)">TUE</div>
+            <div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue)">WED</div>
+            <div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue)">THU</div>
+            <div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue)">FRI</div>
+            ${makeScheduleCards()}
+          </div>
+        </div>
+      </div>
+
+      <!-- REFERRALS -->
+      <div class="admin-panel" id="ap-referrals">
+        <div class="admin-header"><h1>Referrals</h1></div>
+        <div class="stat-cards" style="grid-template-columns:repeat(3,1fr)">
+          <div class="stat-card"><div class="stat-label">Total referrals sent</div><div class="stat-value">2</div></div>
+          <div class="stat-card"><div class="stat-label">Converted to clients</div><div class="stat-value">1</div></div>
+          <div class="stat-card"><div class="stat-label">Credits outstanding</div><div class="stat-value">$25</div></div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-header"><h2>Referral log</h2></div>
+          <table class="data-table">
+            <thead><tr><th>Referrer</th><th>Code</th><th>Referred</th><th>Date</th><th>Status</th><th>Credit</th></tr></thead>
+            <tbody>
+              <tr><td>Sarah M.</td><td style="font-family:monospace">SARAH25</td><td>Jen W.</td><td>Aug 27</td><td><span class="badge badge-green">Booked</span></td><td>$25 applied to Sep</td></tr>
+              <tr><td>Marcus T.</td><td style="font-family:monospace">MARCUS25</td><td>Alex P.</td><td>Aug 28</td><td><span class="badge badge-yellow">Contacted</span></td><td>Pending</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- REVENUE -->
+      <div class="admin-panel" id="ap-revenue">
+        <div class="admin-header"><h1>Revenue</h1></div>
+        <div class="stat-cards">
+          <div class="stat-card"><div class="stat-label">MRR</div><div class="stat-value">$2,490</div><div class="stat-delta">10 active members</div></div>
+          <div class="stat-card"><div class="stat-label">Monthly labor</div><div class="stat-value">$1,772</div><div class="stat-delta down">Direct cost</div></div>
+          <div class="stat-card"><div class="stat-label">Gross contribution</div><div class="stat-value">$718</div><div class="stat-delta">Before fixed overhead</div></div>
+          <div class="stat-card"><div class="stat-label">To breakeven</div><div class="stat-value">8 clients</div><div class="stat-delta up">18 total = cashflow+</div></div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-header"><h2>Revenue by plan</h2></div>
+          <table class="data-table">
+            <thead><tr><th>Plan</th><th>Clients</th><th>Monthly rate</th><th>Total MRR</th><th>Per-visit margin (fast)</th></tr></thead>
+            <tbody>
+              <tr><td>Essential</td><td>1</td><td>$149</td><td>$149</td><td>$60 (40%)</td></tr>
+              <tr><td>Regular</td><td>8</td><td>$249</td><td>$1,992</td><td>$35.50 (29%)</td></tr>
+              <tr><td>Premium</td><td>1</td><td>$399</td><td>$399</td><td>$10.75 (11%)</td></tr>
+              <tr style="font-weight:700"><td>Total</td><td>10</td><td>—</td><td>$2,490</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- NEW BOOKING -->
+      <div class="admin-panel" id="ap-new-booking">
+        <div class="admin-header"><h1>New booking</h1></div>
+        <div class="admin-form">
+          <h2>Client information</h2>
+          <div class="form-grid">
+            <div class="form-group"><label>First name</label><input type="text" placeholder="First name"></div>
+            <div class="form-group"><label>Last name</label><input type="text" placeholder="Last name"></div>
+          </div>
+          <div class="form-grid" style="margin-top:16px">
+            <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="(310) 000-0000"></div>
+          </div>
+          <div class="form-grid form-grid-1" style="margin-top:16px">
+            <div class="form-group"><label>Address</label><input type="text" placeholder="Street address, city, zip"></div>
+          </div>
+        </div>
+        <div class="admin-form">
+          <h2>Service details</h2>
+          <div class="form-grid">
+            <div class="form-group"><label>Membership plan</label>
+              <select><option>Essential — $149/mo</option><option selected>Regular — $249/mo</option><option>Premium — $399/mo</option></select>
+            </div>
+            <div class="form-group"><label>Neighborhood</label>
+              <select><option>Culver City</option><option>Palms</option><option>Venice</option><option>Santa Monica</option><option>West Hollywood</option><option>Hollywood</option><option>Mid-City / West Adams</option><option>Miracle Mile</option></select>
+            </div>
+          </div>
+          <div class="form-grid" style="margin-top:16px">
+            <div class="form-group"><label>Bedrooms</label><select><option>Studio</option><option>1 bed</option><option selected>2 bed</option><option>3 bed</option><option>4+ bed</option></select></div>
+            <div class="form-group"><label>Bathrooms</label><select><option>1</option><option selected>2</option><option>3</option><option>4+</option></select></div>
+          </div>
+          <div class="form-grid" style="margin-top:16px">
+            <div class="form-group"><label>First clean date</label><input type="date"></div>
+            <div class="form-group"><label>Arrival window</label><select><option>8:00–10:00 AM</option><option>10:00 AM–12 PM</option><option>12:00–2:00 PM</option><option>Flexible</option></select></div>
+          </div>
+          <div class="form-group" style="margin-top:16px"><label>Notes</label><textarea placeholder="Access codes, pets, preferences, fragile items…"></textarea></div>
+        </div>
+        <div style="display:flex;gap:16px;justify-content:flex-end">
+          <button class="btn btn-outline" onclick="showAdmin('bookings')">Cancel</button>
+          <button class="btn btn-green" onclick="adminBookingCreated()">✓ Create booking</button>
+        </div>
+      </div>
+
+    </div><!-- /admin-main -->
+  </div><!-- /admin-layout -->
+</div>
+
+<script>
+// ── Page routing ──────────────────────────────────────────
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const target = document.getElementById('page-' + name);
+  if (!target) return;
+  target.classList.add('active');
+  const nav = document.getElementById('nav-' + name);
+  if (nav) nav.classList.add('active');
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  if (name === 'booking') {
+    currentStep = 1;
+    document.querySelectorAll('.booking-step').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.progress-step').forEach(s => s.classList.remove('active','done'));
+    const s1 = document.getElementById('step-1');
+    const p1 = document.getElementById('prog-1');
+    if (s1) s1.classList.add('active');
+    if (p1) p1.classList.add('active');
+    initCalendar();
+  }
+}
+
+// ── Booking flow ──────────────────────────────────────────
+let bookingData = {
+  plan: 'Regular', price: '249', freq: '2x per month',
+  date: null, time: '8:00–10:00 AM'
+};
+
+function selectPlan(el, plan, price, freq) {
+  document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  bookingData.plan = plan; bookingData.price = price; bookingData.freq = freq;
+}
+
+let currentStep = 1;
+function nextStep(n) {
+  document.getElementById('step-' + currentStep).classList.remove('active');
+  document.getElementById('prog-' + currentStep).classList.remove('active');
+  document.getElementById('prog-' + currentStep).classList.add('done');
+  currentStep = n;
+  document.getElementById('step-' + n).classList.add('active');
+  document.getElementById('prog-' + n).classList.add('active');
+  document.getElementById('prog-' + n).classList.remove('done');
+  window.scrollTo(0, 120);
+  if (n === 5) buildSummary();
+}
+
+function buildSummary() {
+  const fname = document.getElementById('fname').value || 'Client';
+  const lname = document.getElementById('lname').value || '';
+  const neighborhood = document.getElementById('neighborhood').value;
+  const bedrooms = document.getElementById('bedrooms').value;
+  const date = bookingData.date || 'TBD';
+  const time = bookingData.time;
+  document.getElementById('booking-summary').innerHTML = `
+    <div class="summary-row"><span>Client</span><span>${fname} ${lname}</span></div>
+    <div class="summary-row"><span>Neighborhood</span><span>${neighborhood}</span></div>
+    <div class="summary-row"><span>Home size</span><span>${bedrooms}</span></div>
+    <div class="summary-row"><span>Plan</span><span>${bookingData.plan} — $${bookingData.price}/mo</span></div>
+    <div class="summary-row"><span>Frequency</span><span>${bookingData.freq}</span></div>
+    <div class="summary-row"><span>First clean</span><span>${date} · ${time}</span></div>
+    <div class="summary-row"><span>First visit (deep clean)</span><span>$280–$320</span></div>
+    <div class="summary-row"><span>Monthly membership</span><span>$${bookingData.price}/mo</span></div>
+  `;
+}
+
+function confirmBooking() {
+  document.getElementById('step-5').classList.remove('active');
+  document.getElementById('step-confirmed').classList.add('active');
+  const ref = 'PC-' + Math.floor(1000 + Math.random() * 9000);
+  document.getElementById('booking-ref').textContent = '#' + ref;
+  const fname = document.getElementById('fname').value || 'CLIENT';
+  document.getElementById('referral-code').textContent = fname.toUpperCase().substring(0,6) + '25';
+  window.scrollTo(0, 0);
+}
+
+// ── Calendar ──────────────────────────────────────────────
+let calYear = 2026, calMonth = 8; // 0-indexed: 8 = September
+function initCalendar() { renderCal(); }
+function changeMonth(d) { calMonth += d; if(calMonth > 11){calMonth=0;calYear++;} if(calMonth<0){calMonth=11;calYear--;} renderCal(); }
+function renderCal() {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('cal-title').textContent = months[calMonth] + ' ' + calYear;
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+  ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(d => { const el = document.createElement('div'); el.className = 'cal-day-label'; el.textContent = d; grid.appendChild(el); });
+  const first = new Date(calYear, calMonth, 1).getDay();
+  const days = new Date(calYear, calMonth+1, 0).getDate();
+  for(let i=0;i<first;i++) { const el=document.createElement('div'); el.className='cal-day empty'; grid.appendChild(el); }
+  const today = new Date();
+  for(let d=1;d<=days;d++) {
+    const el = document.createElement('div');
+    const date = new Date(calYear, calMonth, d);
+    const dow = date.getDay();
+    const isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const isWeekend = dow === 0 || dow === 6;
+    el.textContent = d;
+    if(isPast || isWeekend) { el.className = 'cal-day past'; }
+    else {
+      el.className = 'cal-day available';
+      el.onclick = () => selectDay(el, d);
+    }
+    grid.appendChild(el);
+  }
+}
+function selectDay(el, d) {
+  document.querySelectorAll('.cal-day').forEach(c => { if(c.classList.contains('available')) c.classList.remove('selected'); });
+  el.classList.add('selected');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  bookingData.date = months[calMonth] + ' ' + d + ', ' + calYear;
+}
+function selectTime(el, t) {
+  document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+  el.classList.add('selected');
+  bookingData.time = t;
+}
+
+// ── FAQ ───────────────────────────────────────────────────
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  item.classList.toggle('open');
+}
+
+// ── Admin ─────────────────────────────────────────────────
+function showAdmin(panel) {
+  document.querySelectorAll('.admin-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('ap-' + panel).classList.add('active');
+  document.getElementById('sa-' + panel).classList.add('active');
+}
+function adminBookingCreated() {
+  alert('Booking created! Client added to roster and confirmation sent.');
+  showAdmin('bookings');
+}
+
+// ── Schedule cards (inline since template literals can't be in HTML) ──────
+function makeScheduleCards() {
+  const days = [
+    [{c:'Sarah M.',t:'9:00 AM',n:'Culver City'},{c:'Marcus T.',t:'1:00 PM',n:'Venice'}],
+    [{c:'Priya K.',t:'9:00 AM',n:'Santa Monica'}],
+    [{c:'James L.',t:'10:00 AM',n:'W. Hollywood'},{c:'Carmen V.',t:'2:00 PM',n:'Hollywood'}],
+    [{c:'Diana R.',t:'9:00 AM',n:'Miracle Mile'},{c:'David N.',t:'1:00 PM',n:'Mid-City'}],
+    [{c:'Tom H.',t:'11:00 AM',n:'Palms'},{c:'Rebecca S.',t:'3:00 PM',n:'Culver City'}],
+  ];
+  return days.map(day =>
+    '<div>' + day.map(job =>
+      `<div style="background:var(--sky);border-radius:6px;padding:10px 12px;margin-bottom:10px;border-left:3px solid var(--blue)">
+        <div style="font-weight:700;font-size:0.83rem;color:var(--navy)">${job.c}</div>
+        <div style="font-size:0.78rem;color:var(--slate)">${job.t} · ${job.n}</div>
+      </div>`
+    ).join('') + '</div>'
+  ).join('');
+}
+
+// Replace the schedule innerHTML after DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  const sched = document.querySelector('#ap-schedule .data-card > div');
+  if(sched) {
+    const labels = sched.querySelectorAll('div:nth-child(-n+5)');
+    const dayData = [
+      [{c:'Sarah M.',t:'9:00 AM',n:'Culver City'},{c:'Marcus T.',t:'1:00 PM',n:'Venice'}],
+      [{c:'Priya K.',t:'9:00 AM',n:'Santa Monica'}],
+      [{c:'James L.',t:'10:00 AM',n:'W. Hollywood'},{c:'Carmen V.',t:'2:00 PM',n:'Hollywood'}],
+      [{c:'Diana R.',t:'9:00 AM',n:'Miracle Mile'},{c:'David N.',t:'1:00 PM',n:'Mid-City'}],
+      [{c:'Tom H.',t:'11:00 AM',n:'Palms'},{c:'Rebecca S.',t:'3:00 PM',n:'Culver City'}],
+    ];
+    const dayNames = ['MON','TUE','WED','THU','FRI'];
+    let html = '';
+    dayNames.forEach((name,i) => {
+      html += `<div><div style="font-weight:700;color:var(--navy);font-size:0.9rem;text-align:center;padding-bottom:10px;border-bottom:2px solid var(--blue);margin-bottom:12px">${name}</div>`;
+      dayData[i].forEach(job => {
+        html += `<div style="background:var(--sky);border-radius:6px;padding:10px 12px;margin-bottom:10px;border-left:3px solid var(--blue)">
+          <div style="font-weight:700;font-size:0.83rem;color:var(--navy)">${job.c}</div>
+          <div style="font-size:0.78rem;color:var(--slate)">${job.t} · ${job.n}</div>
+        </div>`;
+      });
+      html += '</div>';
+    });
+    sched.innerHTML = html;
+  }
+  initCalendar();
+});
+</script>
+</body>
+</html>
